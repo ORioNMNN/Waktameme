@@ -6,14 +6,14 @@ public enum Process { Phase01,  Phase02, Phase03, Phase04, Phase05, }
 public class Pattern01 : MonoBehaviour
 {
     [SerializeField]
-    private GameObject[] warningImages; // 경고 이미지
+    private GameObject[] warningImages; // ?? ???
     [SerializeField]
-    private GameObject[] gosegu; // 플레이어 오브젝트
+    private GameObject[] gosegu; // ???? 
     [SerializeField]
-    private GameObject ground;
+    private GameObject ground; // ?
     [SerializeField]
-    private AudioSource[] arrayAudio;
-    private Movement2D movement2D;
+    private AudioSource[] arrayAudio; // ?? ??
+    private Movement2D movement2D; 
 
     private Process process = Process.Phase01;
 
@@ -77,7 +77,7 @@ public class Pattern01 : MonoBehaviour
 
     private void OnDisable()
     {
-        //다음 사용을 위해 플레이어 오브젝트 상태를 초기화 
+        //???? ?????? ???? ???????? ???????? ?????? ?????? 
         for (int i = 0; i < gosegu.Length; ++i)
         {
             gosegu[i].SetActive(false);
@@ -385,11 +385,11 @@ public class Pattern01 : MonoBehaviour
         gosegu[3].GetComponent<Movement2D>().MoveTo(new Vector2(0, 1));
         while(gosegu[3].GetComponent<Transform>().position.y <= -3)
         {
-            gosegu[3].GetComponent<Movement2D>().MoveTo(new Vector2(0, 1)); // y -30까지 위로
+            gosegu[3].GetComponent<Movement2D>().MoveTo(new Vector2(0, 1)); // y -30???? ????
             yield return null;
         }
 
-        gosegu[3].GetComponent<Movement2D>().MoveTo(new Vector2(0, 0)); // 잠시 멈추고 0.1초 대기
+        gosegu[3].GetComponent<Movement2D>().MoveTo(new Vector2(0, 0)); // ???? ?????? 0.1?? ????
         yield return new WaitForSeconds(0.1f);
 
         while(gosegu[3].GetComponent<Transform>().position.y >= -6.5)
