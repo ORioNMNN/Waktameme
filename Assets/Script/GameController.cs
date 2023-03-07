@@ -9,9 +9,9 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private PatternPlayer       patternPlayer;
 
-    private readonly float scoreScale = 20; // 점수 증가 계수 (읽기전용)
+    private readonly float scoreScale = 20; // ???? ???? ???? (????????)
 
-    //플레이어 점수 (죽지않고 버틴 시간)
+    //???????? ???? (???????? ???? ????)
     public float CurrentScore  { private set; get; } = 0;
 
     public bool  IsGamePlay { private set; get; } = false;
@@ -45,6 +45,12 @@ public class GameController : MonoBehaviour
         IsGamePlay = false;
 
     }
+
+    public void Shop()
+    {
+        uiController.GoShop();
+    }
+    
     private void Update()
     {
         if (IsGamePlay == false) return;

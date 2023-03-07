@@ -49,7 +49,7 @@ public class UIController : MonoBehaviour
     {
         int currentScore = (int)gameContoller.CurrentScore;
 
-        textResultScore.text = currentScore.ToString(); // 현재 점수 출력
+        textResultScore.text = currentScore.ToString(); // ???? ???? ????
         CalculateGradeAndTalk(currentScore);
         CalculateHighScore(currentScore);
 
@@ -64,6 +64,10 @@ public class UIController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void GoShop()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }    
     private void Update()
     {
         textScore.text = gameContoller.CurrentScore.ToString("F0");
@@ -105,9 +109,9 @@ public class UIController : MonoBehaviour
         if( score > highScore)
         {
             PlayerPrefs.SetString("HIGHSCORE", textResultGrade.text);
-            // 최고 등급 갱신
+            // ???? ???? ????
             PlayerPrefs.SetInt("HIGHSCORE", score);
-            // 최고 점수 갱신
+            // ???? ???? ????
 
             textResultHighScore.text = score.ToString();
         }
