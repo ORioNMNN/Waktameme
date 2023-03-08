@@ -1557,7 +1557,7 @@ GameObject:
   - component: {fileID: 192131606}
   - component: {fileID: 192131605}
   m_Layer: 5
-  m_Name: Select01 (6)
+  m_Name: Select07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2023,7 +2023,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 363905356}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 83e7fc78a4a903042a84e7112367ba6a, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &363905356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2285,7 +2297,7 @@ GameObject:
   - component: {fileID: 393573461}
   - component: {fileID: 393573460}
   m_Layer: 5
-  m_Name: Select01 (2)
+  m_Name: Select03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2448,7 +2460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &402641591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3741,7 +3753,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &645845942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4134,7 +4146,7 @@ GameObject:
   - component: {fileID: 706959928}
   - component: {fileID: 706959927}
   m_Layer: 5
-  m_Name: Select01 (1)
+  m_Name: Select02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6424,7 +6436,7 @@ GameObject:
   - component: {fileID: 1089803899}
   - component: {fileID: 1089803898}
   m_Layer: 5
-  m_Name: Select01 (4)
+  m_Name: Select05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6502,7 +6514,7 @@ GameObject:
   - component: {fileID: 1092771648}
   - component: {fileID: 1092771647}
   m_Layer: 5
-  m_Name: Select01 (3)
+  m_Name: Select04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7055,7 +7067,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1321687096
 Rigidbody2D:
   serializedVersion: 4
@@ -7321,7 +7333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1354799776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9836,7 +9848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1728424750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10103,7 +10115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1777469688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10361,7 +10373,7 @@ GameObject:
   - component: {fileID: 1811967961}
   - component: {fileID: 1811967960}
   m_Layer: 5
-  m_Name: Select01 (5)
+  m_Name: Select06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10680,6 +10692,7 @@ GameObject:
   - component: {fileID: 1890936119}
   - component: {fileID: 1890936118}
   - component: {fileID: 1890936117}
+  - component: {fileID: 1890936120}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -10737,6 +10750,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1890936120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890936116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e00fe89be8c54809b424098c91bc67d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1893522733
 GameObject:
   m_ObjectHideFlags: 0
@@ -10937,7 +10962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1910711694
 MonoBehaviour:
   m_ObjectHideFlags: 0

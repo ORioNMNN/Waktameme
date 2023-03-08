@@ -8,6 +8,8 @@ public class GameController : MonoBehaviour
     private UIController        uiController;
     [SerializeField]
     private PatternPlayer       patternPlayer;
+    [SerializeField]
+    private CharController      charController;
 
     private readonly float scoreScale = 20; // ???? ???? ???? (????????)
 
@@ -22,6 +24,7 @@ public class GameController : MonoBehaviour
 
         patternPlayer.GameStart();
 
+        charController.good();
         IsGamePlay = true;
     }
 
