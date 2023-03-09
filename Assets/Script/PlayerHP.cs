@@ -43,11 +43,13 @@ public class PlayerHP : MonoBehaviour
 
     private IEnumerator HitColorAnimation()
     {
+        Color origin = spriteRenderer.color;
+        Debug.Log(origin);
         spriteRenderer.color = Color.magenta;
 
         yield return new WaitForSeconds(0.5f);
 
-        spriteRenderer.color = new Color(0.04156689f, 0.4150943f, 0, 1);
+        spriteRenderer.color = origin;
 
     }
 

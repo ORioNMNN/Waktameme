@@ -292,9 +292,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -17}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &29312502
 MonoBehaviour:
@@ -429,7 +429,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 51020717}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2132513987}
+        m_TargetAssemblyTypeName: CharManager, Assembly-CSharp
+        m_MethodName: Jing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &51020717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1179,7 +1191,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 113999477}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2132513987}
+        m_TargetAssemblyTypeName: CharManager, Assembly-CSharp
+        m_MethodName: Gosegu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &113999477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1580,9 +1604,9 @@ RectTransform:
   m_Father: {fileID: 2090649826}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 2581.1216, y: -250.09}
   m_SizeDelta: {x: 67.3168, y: 73.6832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &192131605
@@ -1658,9 +1682,9 @@ RectTransform:
   m_Father: {fileID: 2090649826}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 2978.2173, y: -250.09}
   m_SizeDelta: {x: 67.3168, y: 73.6832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &256026187
@@ -2024,13 +2048,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 83e7fc78a4a903042a84e7112367ba6a, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1890936118}
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+        m_MethodName: Shop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2320,9 +2344,9 @@ RectTransform:
   m_Father: {fileID: 2090649826}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 992.739, y: -250.09}
   m_SizeDelta: {x: 67.3168, y: 73.6832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &393573460
@@ -2504,6 +2528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerJumpPower: 15
+  playerType: 1
   gameController: {fileID: 1890936118}
   stageData: {fileID: 11400000, guid: aad0ebd09a8f7554297c6523601a9334, type: 2}
 --- !u!247 &402641594
@@ -2627,7 +2652,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2132513986}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
@@ -3560,7 +3585,7 @@ GameObject:
   - component: {fileID: 619425984}
   m_Layer: 0
   m_Name: Groud
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3628,7 +3653,7 @@ Transform:
   m_LocalScale: {x: 1.0073082, y: 1.0073082, z: 1.0073082}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &619425984
 BoxCollider2D:
@@ -3797,6 +3822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerJumpPower: 15
+  playerType: 1
   gameController: {fileID: 1890936118}
   stageData: {fileID: 11400000, guid: aad0ebd09a8f7554297c6523601a9334, type: 2}
 --- !u!247 &645845945
@@ -4091,9 +4117,9 @@ RectTransform:
   m_Father: {fileID: 2090649826}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 198.5478, y: -250.09}
   m_SizeDelta: {x: 67.3168, y: 73.6832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &705417993
@@ -4169,9 +4195,9 @@ RectTransform:
   m_Father: {fileID: 2090649826}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 595.6434, y: -250.09}
   m_SizeDelta: {x: 67.3168, y: 73.6832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &706959927
@@ -4879,7 +4905,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 812916301}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2132513987}
+        m_TargetAssemblyTypeName: CharManager, Assembly-CSharp
+        m_MethodName: Jururu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &812916301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5948,7 +5986,7 @@ Transform:
   m_LocalScale: {x: 23.09428, y: 0.5600112, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1027778295
 GameObject:
@@ -6459,9 +6497,9 @@ RectTransform:
   m_Father: {fileID: 2090649826}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1786.9303, y: -250.09}
   m_SizeDelta: {x: 67.3168, y: 73.6832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1089803898
@@ -6537,9 +6575,9 @@ RectTransform:
   m_Father: {fileID: 2090649826}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1389.8347, y: -250.09}
   m_SizeDelta: {x: 67.3168, y: 73.6832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092771647
@@ -7193,6 +7231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerJumpPower: 15
+  playerType: 1
   gameController: {fileID: 1890936118}
   stageData: {fileID: 11400000, guid: aad0ebd09a8f7554297c6523601a9334, type: 2}
 --- !u!247 &1321687101
@@ -7377,6 +7416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerJumpPower: 15
+  playerType: 1
   gameController: {fileID: 1890936118}
   stageData: {fileID: 11400000, guid: aad0ebd09a8f7554297c6523601a9334, type: 2}
 --- !u!247 &1354799779
@@ -7500,7 +7540,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 2132513986}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1386698569
 GameObject:
@@ -8506,7 +8546,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1890936118}
-        m_TargetAssemblyTypeName: ScoreController, Assembly-CSharp
+        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
         m_MethodName: GameStart
         m_Mode: 1
         m_Arguments:
@@ -8945,7 +8985,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.6043885, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9069,7 +9109,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1590292635}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2132513987}
+        m_TargetAssemblyTypeName: CharManager, Assembly-CSharp
+        m_MethodName: Ine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1590292635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9445,7 +9497,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1655942319}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2132513987}
+        m_TargetAssemblyTypeName: CharManager, Assembly-CSharp
+        m_MethodName: Wakgood
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Wakgood()
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1655942319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9892,6 +9956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerJumpPower: 15
+  playerType: 1
   gameController: {fileID: 1890936118}
   stageData: {fileID: 11400000, guid: aad0ebd09a8f7554297c6523601a9334, type: 2}
 --- !u!247 &1728424753
@@ -10034,7 +10099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1764086379
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10159,6 +10224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerJumpPower: 15
+  playerType: 1
   gameController: {fileID: 1890936118}
   stageData: {fileID: 11400000, guid: aad0ebd09a8f7554297c6523601a9334, type: 2}
 --- !u!247 &1777469691
@@ -10396,9 +10462,9 @@ RectTransform:
   m_Father: {fileID: 2090649826}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 2184.026, y: -250.09}
   m_SizeDelta: {x: 67.3168, y: 73.6832}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1811967960
@@ -10521,7 +10587,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1814556086}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2132513987}
+        m_TargetAssemblyTypeName: CharManager, Assembly-CSharp
+        m_MethodName: Lilpa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1814556086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10642,7 +10720,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1851386189}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2132513987}
+        m_TargetAssemblyTypeName: CharManager, Assembly-CSharp
+        m_MethodName: Viichan
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1851386189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10692,7 +10782,6 @@ GameObject:
   - component: {fileID: 1890936119}
   - component: {fileID: 1890936118}
   - component: {fileID: 1890936117}
-  - component: {fileID: 1890936120}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -10722,6 +10811,7 @@ MonoBehaviour:
   textResultScore: {fileID: 1610567370}
   textResultGrade: {fileID: 4660253}
   textResultHighScore: {fileID: 2068346242}
+  shopPanel: {fileID: 1764086378}
 --- !u!114 &1890936118
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10736,6 +10826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiController: {fileID: 1890936117}
   patternPlayer: {fileID: 257508219}
+  charManger: {fileID: 2132513987}
 --- !u!4 &1890936119
 Transform:
   m_ObjectHideFlags: 0
@@ -10750,18 +10841,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1890936120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1890936116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e00fe89be8c54809b424098c91bc67d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1893522733
 GameObject:
   m_ObjectHideFlags: 0
@@ -11006,6 +11085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerJumpPower: 15
+  playerType: 1
   gameController: {fileID: 1890936118}
   stageData: {fileID: 11400000, guid: aad0ebd09a8f7554297c6523601a9334, type: 2}
 --- !u!247 &1910711697
@@ -12052,6 +12132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2132513986}
+  - component: {fileID: 2132513987}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -12066,20 +12147,40 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132513985}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.70060176, y: 3.1875834, z: -1.0162535}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.7006018, y: 3.1875834, z: -1.0162535}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1321687098}
   - {fileID: 1910711701}
   - {fileID: 645845949}
   - {fileID: 1777469695}
-  - {fileID: 402641598}
   - {fileID: 1354799783}
+  - {fileID: 402641598}
   - {fileID: 1728424757}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2132513987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132513985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1fc67ad990504e57b6f5f4eb0cd0e65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  character:
+  - {fileID: 1321687095}
+  - {fileID: 1910711693}
+  - {fileID: 645845941}
+  - {fileID: 1777469687}
+  - {fileID: 1354799775}
+  - {fileID: 402641590}
+  - {fileID: 1728424749}
 --- !u!1 &2145584628
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private PatternPlayer       patternPlayer;
     [SerializeField]
-    private CharController      charController;
+    private CharManager         charManger;
 
     private readonly float scoreScale = 20; // ???? ???? ???? (????????)
 
@@ -24,7 +24,6 @@ public class GameController : MonoBehaviour
 
         patternPlayer.GameStart();
 
-        charController.good();
         IsGamePlay = true;
     }
 

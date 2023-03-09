@@ -32,6 +32,10 @@ public class UIController : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI textResultHighScore;
 
+    [Header("Shop UI")]
+    [SerializeField]
+    private GameObject shopPanel;
+
 
 
     private void Awake()
@@ -66,7 +70,8 @@ public class UIController : MonoBehaviour
 
     public void GoShop()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        gamePanel.SetActive(false);
+        shopPanel.SetActive(true);
     }    
     private void Update()
     {

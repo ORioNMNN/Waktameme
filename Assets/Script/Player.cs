@@ -5,15 +5,16 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float playerJumpPower = 10;
+    public int playerType = 1;
     Rigidbody2D rid;
-
     [SerializeField]
     private GameController gameController;
-
     [SerializeField]
     private StageData  stageData;
     private Movement2D movement2D;
     public static PlayerHP    playerHP;
+    private int MaxJump = 1;
+    private int JumpCount = 0;
      
     // Start is called before the first frame update
     private void Awake()
@@ -21,7 +22,10 @@ public class Player : MonoBehaviour
         rid        = GetComponent<Rigidbody2D>();
         movement2D = GetComponent<Movement2D>();
         playerHP   = GetComponent<PlayerHP>();
-
+        if(playerType == 4)
+        {
+            MaxJump = 2;
+        }
     }
 
     // Update is called once per frame
@@ -61,13 +65,11 @@ public class Player : MonoBehaviour
     }
     private void PlayerJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && JumpCount < MaxJump)
         {
             rid.velocity = Vector2.up * playerJumpPower;
-
+            JumpCount++;
         }
-
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -85,6 +87,12 @@ public class Player : MonoBehaviour
                 GetComponent<Collider2D>().enabled = false;
                 gameController.GameOver();
             }    
+        }
+
+        if (collision.CompareTag("Ground"))
+        {
+            JumpCount = 0;
+            if(Jumpcount)
         }
     }
 }
