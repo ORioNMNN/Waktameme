@@ -1,24 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class PlayerHP : MonoBehaviour
 {
     [SerializeField]
     private GameObject[] imageHP;
     private int          currentHP;
     private SpriteRenderer spriteRenderer;
-
     private void Awake()
     {
         currentHP = imageHP.Length;
         spriteRenderer = GetComponent<SpriteRenderer>();
-
+        Color origin = spriteRenderer.color;
+        
     }
 
     public bool TakeDamage()
     {
-        if( currentHP > 1)
+        if( currentHP >= 1)
         {
             currentHP--;
             imageHP[currentHP].SetActive(false);
@@ -41,8 +41,27 @@ public class PlayerHP : MonoBehaviour
         return false;
     }
 
+    public bool TakeHeal()
+    {
+        if ( currentHP >= 1 )
+        {
+            currentHP++;
+            imageHP[currentHP + 1].SetActive(true);
+
+        }
+
+        else
+        {
+            return true;
+        }
+
+        return false;
+    }
+
+  
     private IEnumerator HitColorAnimation()
     {
+
         Color origin = spriteRenderer.color;
         Debug.Log(origin);
         spriteRenderer.color = Color.magenta;
@@ -51,7 +70,5 @@ public class PlayerHP : MonoBehaviour
 
         spriteRenderer.color = origin;
 
-    }
-
-
+    } 
 }
